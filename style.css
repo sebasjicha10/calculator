@@ -58,7 +58,6 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    text-align: right;
     color: white;
     opacity: 0.8;
 }
