@@ -1,0 +1,218 @@
+body {
+    background-color: white;
+}
+
+/* Division between buttons color */
+:root {
+    --gap-color: rgba(71,3,53,0.3);
+}
+
+/* Reset Button styling */
+button {
+	background: none;
+	color: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    /* Font styling */
+    font-family: 'Open Sans', sans-serif;
+    color: #BBBBBB;
+    font-size: 30px;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+button:focus {
+    outline:0;
+}
+
+button:active {
+    color: white;
+}
+
+/* Whole area */
+#calculator {
+    background-image: linear-gradient(#F84944, #631D51);
+    width: 360px;
+    height: 632px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px 90px;
+    grid-template-areas: 
+        "display display display display"
+        "display display display display"
+        "clear clear delete divide"
+        "seven eight nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "zero decimal equals equals";
+}
+
+/* Top area */
+#display {
+    grid-area: display;
+    border-bottom: 1px solid var(--gap-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    color: white;
+    opacity: 0.8;
+}
+
+#result {
+    display: table;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+#equation {
+    display: table;
+    height: 16px;
+    border-top: 1px solid rgba(180,180,180,0.5);
+    padding: 5px 10px 5px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    overflow: hidden;
+}
+
+/* Buttons area */
+#clear {
+    grid-area: clear;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#delete {
+    grid-area: delete;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#divide {
+    grid-area: divide;
+    border-bottom: 1px solid var(--gap-color);
+}
+
+#seven {
+    grid-area: seven;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#eight {
+    grid-area: eight;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#nine {
+    grid-area: nine;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#multiply {
+    grid-area: multiply;
+    border-bottom: 1px solid var(--gap-color);
+}
+
+#four {
+    grid-area: four;    
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#five  {
+    grid-area: five ;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#six {
+    grid-area: six;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#subtract {
+    grid-area: subtract;
+    border-bottom: 1px solid var(--gap-color);
+}
+
+#one {
+    grid-area: one ;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#two {
+    grid-area: two;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#three {
+    grid-area: three;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);
+}
+
+#add {
+    grid-area: add;
+    border-bottom: 1px solid var(--gap-color);
+}
+
+#zero {
+    grid-area: zero;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color);  
+}
+
+#decimal {
+    grid-area: decimal;
+    border-bottom: 1px solid var(--gap-color);
+    border-right: 1px solid var(--gap-color); 
+}
+
+#equals {
+    grid-area: equals;
+}
+
+#app {
+    text-align: center;    
+}
+
+#sebas {
+    display: inline-block;
+    font-size: 14px;
+    background-image: linear-gradient(90deg, #F84944, #631D51);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mobile */
+@media (max-width: 360px) {
+    /* Reset Button styling */
+    button {
+        /* Font styling */
+        font-size: 20px;
+    }
+    /* Whole area */
+    #calculator {
+        width: 312px;
+        height: 548px;
+        grid-template-columns: 78px 78px 78px 78px 78px 78px 78px;
+        grid-template-rows: 78px 78px 78px 78px;
+    }
+    #sebas {
+        font-size: 12px;
+    }
+
+}
