@@ -71,7 +71,6 @@ button:active {
 }
 
 #equation {
-    display: table;
     height: 16px;
     border-top: 1px solid rgba(180,180,180,0.5);
     padding: 5px 10px 5px 0px;
