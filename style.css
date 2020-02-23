@@ -64,7 +64,6 @@ button:active {
 }
 
 #result {
-    display: table;
     font-family: 'Open Sans', sans-serif;
     font-size: 70px;
     padding-right: 10px;
