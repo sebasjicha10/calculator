@@ -212,6 +212,9 @@ button:active {
         grid-template-columns: 78px 78px 78px 78px 78px 78px 78px;
         grid-template-rows: 78px 78px 78px 78px;
     }
+    #equation {
+        width: 312px;
+    }
     #sebas {
         font-size: 12px;
     }
