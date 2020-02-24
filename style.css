@@ -72,7 +72,7 @@ button:active {
 
 #equation {
     display: table;
-    width: 360px;
+    width: 95%;
     text-align: right;
     height: auto;
     border-top: 1px solid rgba(180,180,180,0.5);
@@ -211,9 +211,6 @@ button:active {
         height: 548px;
         grid-template-columns: 78px 78px 78px 78px 78px 78px 78px;
         grid-template-rows: 78px 78px 78px 78px;
-    }
-    #equation {
-        width: 312px;
     }
     #sebas {
         font-size: 12px;
